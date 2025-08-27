@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Grid & Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>My Responsive Website</h1>
+        <p>A demonstration of CSS Grid and Flexbox layouts.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <h2>Main Content Section</h2>
+        <p>
+            This section is part of the main CSS Grid layout. It contains a nested Flexbox layout below to demonstrate
+            how both can be used effectively together.
+        </p>
+        
+        <!-- Flexbox Container for Content Cards -->
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <h3>Card Title One</h3>
+                <p>This is a flexible card. It will shrink, grow, and wrap based on the available space, thanks to Flexbox properties.</p>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <h3>Card Title Two</h3>
+                <p>These cards demonstrate responsive behavior within a fluid grid container. On a desktop, you'll see multiple columns, but they'll stack beautifully on mobile.</p>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <h3>Card Title Three</h3>
+                <p>The synergy of Grid and Flexbox allows for powerful and elegant layouts that adapt to any screen size without a single framework.</p>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="card">
+                <h3>Card Title Four</h3>
+                <p>Flexbox is ideal for aligning items within a single dimension, like a row or a column, while Grid is perfect for multi-dimensional, page-level layouts.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <p>This sidebar section will be placed to the right of the main content on large screens and will move below it on smaller devices due to the media queries changing the grid layout.</p>
+        <p>It can be used for extra information, advertisements, or links to other pages.</p>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Responsive Layout. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
